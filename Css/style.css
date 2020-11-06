@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #200122, #6f0000);
+}
+
+.header{
+    display: flex;
+    padding: 10px;
+    margin-top:10px;
+    justify-content: space-between;
+}
+.header img{
+    width:150px;
+    height: 100px;
+}
+.header h1{
+    font-size: 5rem;
+    color: white;
+    font-family: 'MuseoModerno', cursive;
+}
+.btninstruction{
+   border-radius: 10px;
+   width: 100px;
+   height: 60px;
+   border: none;
+   outline: none;
+   transition: 1s ease;
+   font-family: 'Poppins';
+}
+.midsection{
+    display: flex;
+}
+.img{
+    display: flex;
+    margin-top: 80px;
+    width: 900px;
+    justify-content: space-between;
+}
+.char{
+    color: white;
+    margin-top: 60px;
+    width: 900px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Noto Serif', serif;
+}
+.img img{
+    width: 200px;
+    height: 400px;
+    margin-left: 10px;
+    transition: 1s ease all;
+}
+.img img:hover{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+.midright{
+    width: 800px;
+    justify-content: center;
+    margin-top: 100px;
+    display: none;
+    height: 500px;
+}
+.rightsection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid black;
+    height: 230px;
+    width: 500px;
+    border-radius: 20%;
+    margin-left: 50px;
+    border: 3px solid black;
+}
+.details{
+    color: white;
+    margin-top: 30px;
+    font-family: 'Noto Serif', serif;
+}
+.midright input{
+    width: 400px;
+    height: 50px;
+    margin-top: 30px;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.1rem;
+    padding:20px;
+    letter-spacing: 2px;
+    transition: 1s ease all;
+    border: none;
+    outline: none;
+}
+.midright input:focus{
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+.midright button{
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    transition: 1s ease all;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+.midright button:hover{
+    background-color: white;
+    color: royalblue;
+    border: 1px solid black;
+}
+.charonclick{
+    background-color: white;
+    border-radius: 40px;
+}
+.charonremove{
+    background-color: transparent;
+}
+.startgame{
+    text-decoration: none;
+    margin-left: 30%;
+    margin-top: 100px;
+    font-family: 'Satisfy', cursive;
+    display: none;
+}
+.startgame a{
+    text-decoration: none;
+    color: orangered;
+    font-size: 2rem;
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 40px;
+    transition: 1s ease all;
+}
+.startgame a:hover{
+    background-color: orangered;
+    transition: 1s all linear;
+    color: black;
+    border: 1px solid white;
+}
+.instructions{
+    position: fixed;
+    background-color: powderblue;
+    left: 62%;
+    list-style: none;
+    top: 20%;
+    border-radius: 20px;
+    padding: 20px;
+    visibility: hidden;
+    
+}
+.instructions li{
+    padding: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.btninstruction:hover.instructions {
+    visibility: visible;
+}
+.btninstruction:hover{
+    background-color: black;
+    color: white;
+}

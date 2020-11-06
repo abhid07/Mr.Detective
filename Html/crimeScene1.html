@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Scene</title>
+    <link rel="stylesheet" href="../Css/crimeScene1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=MuseoModerno:wght@700&family=Noto+Serif&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <section class="policecar" id="policecar">
+        <img src="../assets/policeCar.gif">
+    </section>
+    <section class="crimescene" id="crimescene">
+        <div class="crimesceneimg" id="crimesceneimg">
+            <h1 class="timer far fa-clock" id="timer"></h1>
+            <h1 class="points" id="points"></h1>
+            <img src="../assets/bag.png" alt="Bag" style="width: 50px; height: 50px; top: 55%; left: 18%;" id="bag">
+            <img src="../assets/blood.png" alt="Blood" style="width: 150px; height: 70px; top: 56%; left: 70%;" onclick="blood()" id="blood">
+            <img src="../assets/bloodhand.png" alt="Blood" style="width: 70px; height: 70px; top: 40%; left: 2%;" onclick="bloodhand()" id="bloodhand">
+            <img src="../assets/burger.png" alt="Burger" style="width: 35px; height: 40px; top: 80%; left: 83%;">
+            <img src="../assets/bullethole.png" alt="Bullethole" style="width: 70px; height: 70px; top: 50%; left: 92%;">
+            <img src="../assets/bottles.png" alt="Bottles" style="width: 40px; height: 45px; top: 39%; left: 25%;">
+            <img src="../assets/blackCoat.png" alt="Lighter" style="width: 80px; height: 60px; top: 52%; left: 65%;">
+            <img src="../assets/bottleRack.png" alt="Lighter" style="width: 150px; height: 150px; top: 31%; left: 68%;">
+            <img src="../assets/bloodybow.png" alt="Bloodybow" style="width: 50px; height: 50px; top: 65%; left: 88%;" onclick="bow()" id="bow">
+            <img src="../assets/bloodyShoes.png" alt="BloodyShoes" style="width: 50px; height: 70px; top: 43%; left: 60%;">
+            <img src="../assets/cam.png" alt="Cam" style="width: 40px; height: 40px; top: 25%; left: 73%;">
+            <img src="../assets/can.png" alt="Can" style="width: 40px; height: 30px; top: 75%; left: 15%;">
+            <img src="../assets/cap.png" alt="Cap" style="width: 30px; height: 30px; top: 38%; left: 47%;">
+            <img src="../assets/cd.png" alt="Cd" style="width: 50px; height: 50px; top: 78%; left: 68%;">
+            <img src="../assets/chain.png" alt="Chain" style="width: 50px; height: 50px; top: 85%; left: 29%;">
+            <img src="../assets/chips.png" alt="Chips" style="width: 70px; height: 80px; top: 65%; left: 78%;">
+            <img src="../assets/cigarette.png" alt="cigarette" style="width: 50px; height: 50px; top: 63%; left: 5%;">
+            <img src="../assets/dart.png" alt="Dart" style="width: 80px; height: 80px; top: 40%; left: 10%;">
+            <img src="../assets/deadbody.png"alt="Deadbody" style="width: 150px; height: 150px; top: 48%; left: 47%;" onclick="deadBody()" id="deadBody">
+            <img src="../assets/discoball.png" alt="Disco Ball" style="width: 130px; height: 150px; top: 0%; left: 55%;">
+            <img src="../assets/glass.png" alt="Glass" style="width: 200px; height: 150px; top: 76%; left: -4%;" onclick="brokenGlass()" id="brokenGlass">
+            <img src="../assets/glove.png" alt="Glove" style="width: 50px; height: 50px; top: 77%; left: 92%;">
+            <img src="../assets/goldring.png" alt="Goldring" style="width: 50px; height: 50px; top: 45%; left: 53%;">
+            <img src="../assets/guitar.png" alt="Guitar" style="width: 100px; height: 130px; top: 38%; left: 78%;">
+            <img src="../assets/headphone.png" alt="headphone" style="width: 50px; height: 50px; top: 82%; left: 42%;" onclick="headPhone()" id="headPhone">
+            <img src="../assets/jar.png" alt="Jar" style="width: 80px; height: 80px; top: 66%; left: 20%;">
+            <img src="../assets/killerLogo.png" alt="KillerLogo" style="width: 50px; height: 50px; top: 27%; left: 51%;">
+            <img src="../assets/mug.png" alt="Mug" style="width: 40px; height: 40px; top: 40%; left: 38%;">
+            <img src="../assets/newspaper.png" alt="Newspaper" style="width: 50px; height: 50px; top: 26%; left: 18%;">
+            <img src="../assets/plate.png" alt="Plate" style="width: 40px; height: 40px; top: 31%; left: 32%; opacity: 0.8;">
+            <img src="../assets/saw.png" alt="Saw" style="width: 50px; height: 50px; top: 50%; left: 30%;">
+            <img src="../assets/speaker.png" alt="Speaker" style="width: 150px; height: 90px; top: 59%; left: 58%;">
+            <img src="../assets/trashcan.png" alt="Trash Can" style="width: 150px; height: 100px; top: 65%; left: 38%;">
+            <img src="../assets/trash.png" alt="trash" style="width: 250px; height: 150px; top: 68%; left: 51%;">
+            <img src="../assets/tie.png" alt="Tie" style="width: 150px; height: 150px; top: 1%; left: 5%;">
+            <img src="../assets/wristWatch.png" alt="Watch" style="width: 40px; height: 30px; top: 56%; left: 43%;">
+        </div>
+        <div class="label-container" id="label-container">
+            <h3 id="labelDeadBody">Dead Body</h3>
+            <h3 id="labelHeadPhone">Head Phone</h3>
+            <h3 id="labelBrokenGlass">Broken Glass</h3>
+            <h3 id="labelBlood">Blood</h3>
+            <h3 id="labelFinger">Finger Print</h3>
+        </div>
+    </section>
+   
+    <script src="../JavaScript/crimeScene1.js"></script>
+</body>
+</html>

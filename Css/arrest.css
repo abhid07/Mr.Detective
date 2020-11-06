@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url('../assets/policestation.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.arrest-container{
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+.left-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.left-container img{
+    margin-top: 34px;
+}
+.left-container h1{
+    color: white;
+    margin-top: 50px;
+    font-family: 'MuseoModerno', cursive;
+}
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 700px;
+}
+.right-container h1{
+    color: #ff002c;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-left: 200px;
+    font-family: 'MuseoModerno', cursive;
+}
+.right-container h3{
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Noto Serif', serif;
+    margin-left: 50px;
+}
+
+.stars{
+    width: 100%;
+}
+.starContainer
+{
+    margin-left: 300px;
+    display: none;
+}
+.starContainer a{
+    color: #ff002c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: black;
+    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    margin-left: 500px;
+    transition: 1s ease ;
+    font-family: 'Poppins';
+}
+.starContainer a:hover{
+    background-color:#ff002c;
+    color: black;
+    border: 2px solid white;
+    font-weight: 600;
+}
+.stars h1{
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 50px;
+}
+ .fa-star{
+    color: gold;
+    font-size: 3rem;
+    margin-top:50px;
+    visibility: hidden;
+}
+.value{
+    color: greenyellow;
+    animation-name: opacity1;
+    animation-duration: 6s;
+}
+@keyframes opacity1{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+span{
+    font-family: 'Acme', sans-serif; 
+    color: orangered;
+    text-transform: uppercase;
+}
+.clue{
+    color: red;
+}

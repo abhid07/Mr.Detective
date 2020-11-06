@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Detective</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=MuseoModerno:wght@700&family=Noto+Serif&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+            <img src="./assets/logo.png" alt="" srcset="">
+            <h1>Mr. Detective</h1></li>
+            <button class="btninstruction" onmouseover="show()">Instructions</button>
+    </section>
+    <div class="midsection">
+        <div class="midleft">
+            <h3 class="char">Welcome , Choose Your Character</h3>
+            <div class="img">
+                <img id="char1" onclick="getImage1()" src="./assets/char1.png" alt="">
+                <img id="char2" onclick="getImage2()" src="./assets/char2.png" alt="">
+                <img id="char3" onclick="getImage3()" src="./assets/char3.png" alt="">
+            </div>
+        </div>
+        <div class="midright" id="midright">
+            <div class="rightsection">
+                <h2 class="details">Enter Your Name</h2>
+                <input id="name" type="text">
+                <button onclick="setName()">Submit</button>
+            </div>
+            <div class="startgame" id="startgame"> <a href="./Html/intro.html">Start Game</a></div>
+        </div>
+    </div>
+    <div>
+        <ul class="instructions" id="instructions">
+            <li>1. Help cops to solve the case.</li>
+            <li>2. Read every details given by cop as well as doctor carefully.</li>
+            <li>3. Find clues at crime scene as fast as you can.</li>
+            <li>4. make choice carefully while catching the criminal.</li>
+            <li>5. Try to solve the case in less time to earn more stars.</li>
+        </ul>
+    </div>
+    <script src="./JavaScript/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+.policecar{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.policecar img{
+    width: 100%;
+    height: 100%;
+}
+.crimescene{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.crimesceneimg h1{
+    position: fixed;
+    left: 700px;
+    width: 200px;
+    margin-top: 30px;
+}
+.far{
+    font-size: 2rem;
+    color: white;
+}
+
+.crimesceneimg{
+    background-image: url("../assets/scene2.jpg");
+    width: 100%;
+    height: 93%;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    display: none;
+}
+.label-container{
+    display: flex;
+    width: 100%;
+    background-color: lightgray;
+    height: 7%;
+    justify-content: space-around;
+}
+.label-container h3{
+    margin-top: 5px;
+    background-color: gray;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    width: 15%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.crimesceneimg img{
+    position: fixed;
+}
+.popUp{
+    position: fixed;
+    border: 2px solid #dedede;
+    background-color: rgb(137, 189, 248);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    left: 25%;
+    top: 30%;
+    max-width: 700px;
+}
+.popUp h3{
+
+    font-size: 1.4rem;
+    color: crimson;
+    font-family: 'Noto Serif', serif;
+    text-transform: capitalize;
+}
+.popUp img{
+  float: left;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.popUp button{
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    background-color:royalblue;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    transition: 1s ease all;
+    cursor: pointer;
+    outline: none;
+}
+
+.popUp button:hover{
+    color: royalblue;
+    background-color: white;
+    border: 1px solid black;
+}
+.timer{
+    color: red;
+}
+.points{
+    color: green;
+    background: white;
+    position: fixed;
+    margin-left: 40%;
+    border-radius: 20px;
+    text-align: center;
+    height: 40px;
+    padding: 2px;
+    font-family: 'Noto Serif', serif;
+}
+#labelBrokenGlass:hover::after{
+    content: url(../assets/glass.png);
+    position: absolute;
+    transform: scale(0.2);
+    left: 30%;
+    top: 60%;
+    background-color: lightgray;
+}
+#labelDeadBody:hover::after{
+    content: url(../assets/deadbody.png);
+    position: absolute;
+    transform: scale(0.3);
+    left: 38%;
+    top: 68%;
+    background-color: lightgray;
+}
+#labelHeadPhone:hover::after{
+    content: url(../assets/headphone.png);
+    position: absolute;
+    transform: scale(0.05);
+    left: 1%;
+    top: -42%;
+    background-color: lightgray;
+}
+#labelBrokenGlass:hover::after{
+    content: url(../assets/glass.png);
+    position: absolute;
+    transform: scale(0.2);
+    left: 30%;
+    top: 60%;
+    background-color: lightgray;
+}
+#labelBlood:hover::after{
+    content: url(../assets/blood.png);
+    position: absolute;
+    transform: scale(0.08);
+    left: 10%;
+    top: 30%;
+    background-color: lightgray;
+}
+#labelFinger:hover::after{
+    content: url(../assets/bloodhand.png);
+    position: absolute;
+    transform: scale(0.2);
+    left: 37%;
+    top: 60%;
+    background-color: lightgray;
+}
+#labelBow:hover::after{
+    content: url(../assets/bloodybow.png);
+    position: absolute;
+    transform: scale(0.11);
+    left: 30%;
+    top: 55%;
+    background-color: lightgray;
+}
+#labelTie:hover::after{
+    content: url(../assets/tie.png);
+    position: absolute;
+    transform: scale(0.2);
+    left: 34%;
+    top: 52%;
+    background-color: lightgray;
+}
+#labelShoes:hover::after{
+    content: url(../assets/bloodyShoes.png);
+    position: absolute;
+    transform: scale(0.2);
+    left: 37%;
+    top: 60%;
+    background-color: lightgray;
+}
+#labelCan:hover::after{
+    content: url(../assets/trashcan.png);
+    position: absolute;
+    transform: scale(0.4);
+    left: 43%;
+    top: 73%;
+    background-color: lightgray;
+}
+#labelPlate:hover::after{
+    content: url(../assets/plate.png);
+    position: absolute;
+    transform: scale(0.05);
+    left: 8%;
+    top: 3%;
+    background-color: gray;
+}
+.animation {
+    animation: scale 1s forwards;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
